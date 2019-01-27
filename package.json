@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build": "sh scripts/build.sh",
-    "publish": "sh scripts/publish",
+    "publish": "sh scripts/publish.sh",
     "start": "npm run build & cd dist && static-server"
   },
   "repository": {
