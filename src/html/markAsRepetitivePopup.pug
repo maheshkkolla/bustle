@@ -1,4 +1,5 @@
 include ../mixins/radioButton
+include ../mixins/checkBox
 
 html
  head
@@ -6,6 +7,7 @@ html
     link(rel="stylesheet" href="../css/markAsRepetitivePopup.css")
     script(src="https://trello.com/power-ups/power-up.css")
     script(src="../js/markAsRepetitivePopup.js")
+    link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/octicons/3.5.0/octicons.min.css")
  body
   div#mark-repetitive-popup
    div
@@ -15,5 +17,12 @@ html
     +radio-button("week", "of", "Week")
     +radio-button("month", "of", "Month")
     +radio-button("year", "of", "Year")
-    div#weekDays.u-hidden Weekdays
+    div#weekDays.u-hidden
+     +checkbox("monday", "days", "Mon", "checked")
+     +checkbox("tuesday", "days", "Tue", "checked")
+     +checkbox("wednesday", "days", "Wed", "checked")
+     +checkbox("thursday", "days", "Thu", "checked")
+     +checkbox("friday", "days", "Fri", "checked")
+     +checkbox("saturday", "days", "Sat")
+     +checkbox("sunday", "days", "Sun")
 

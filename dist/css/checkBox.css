@@ -1,0 +1,42 @@
+.check-box {
+    display: inline-block;
+    margin: 2px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.check-box .marker {
+    padding: 5px;
+    border: 2px solid #E2E4E6;
+}
+
+.check-box:hover input:not(:checked) + .marker {
+    border-color: #0079BF;
+    background-color: #E4F0F6;
+}
+
+.check-box input:checked + .marker {
+    border-color: #0079BF;
+    background-color: #E4F0F6;
+}
+
+.check-box .marker .octicon {
+    padding-left: 3px;
+    color: #0079BF;
+}
+
+.check-box input:not(:checked) + .marker > .octicon {
+    visibility: hidden;
+}
+
+.check-box input:checked + .marker > .octicon {
+    visibility: unset;
+}
+
+.check-box input {
+    position: absolute;
+    visibility: hidden;
+}
