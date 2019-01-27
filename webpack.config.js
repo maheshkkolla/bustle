@@ -46,7 +46,8 @@ var htmlConfig = Object.assign({}, config, {
     module: {
         rules: [
             { test: /\.png$/, loader: 'file-loader' },
-            { test: /\.pug$/, loader: 'pug-loader' }
+            { test: /\.pug$/, loader: 'pug-loader' },
+            { test: /\.css$/, loader: 'css-loader' }
         ]
     }
 });

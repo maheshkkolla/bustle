@@ -1,3 +1,3 @@
 rm -r dist/*
-cp -r src/css dist/css
+npm run buildCss
 webpack

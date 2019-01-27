@@ -1,11 +1,12 @@
 include ../mixins/radioButton
 include ../mixins/checkBox
+include ../mixins/timeRange
 
 html
  head
     link(rel="stylesheet" href="https://p.trellocdn.com/power-up.min.css")
     link(rel="stylesheet" href="../css/markAsRepetitivePopup.css")
-    script(src="https://trello.com/power-ups/power-up.css")
+    script(src="https://p.trellocdn.com/power-up.min.js")
     script(src="../js/markAsRepetitivePopup.js")
     link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/octicons/3.5.0/octicons.min.css")
  body
@@ -25,4 +26,6 @@ html
      +checkbox("friday", "days", "Fri", "checked")
      +checkbox("saturday", "days", "Sat")
      +checkbox("sunday", "days", "Sun")
+    div
+     +time-range("Time:")
 

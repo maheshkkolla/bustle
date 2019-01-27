@@ -1,0 +1,11 @@
+@import "../../node_modules/timepicker/dist/jquery.timepicker.css";
+
+input[name=from], input[name=to] {
+  width: 40%;
+  display: inline-block;
+}
+
+.to-label {
+  display: inline-block;
+  margin: 5px;
+}
