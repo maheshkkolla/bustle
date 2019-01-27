@@ -1,0 +1,30 @@
+.radio-button {
+    display: inline-block;
+    margin: 5px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.radio-button .marker {
+    padding: 5px;
+    border: 2px solid #E2E4E6;
+}
+
+.radio-button:hover input:not(:checked) + .marker {
+    border-color: #0079BF;
+    background-color: #E4F0F6;
+}
+
+.radio-button input:checked + .marker {
+    border-color: #0079BF;
+    background-color: #0079BF;
+    color: #FFFFFF;
+}
+
+.radio-button input {
+    position: absolute;
+    visibility: hidden;
+}

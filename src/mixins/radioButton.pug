@@ -1,3 +1,6 @@
-mixin radio-button(label)
- input(type="radio" name="of" value="day" checked)
- span #{label}
+mixin radio-button(value, inputName, label, checked)
+ label.radio-button
+  input(type="radio" name=inputName value=value checked=checked)
+  span.marker #{label}
+  link(rel="stylesheet" href="../css/radioButton.css")
+
