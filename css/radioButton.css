@@ -1,11 +1,15 @@
 .radio-button {
     display: inline-block;
-    margin: 5px;
+    margin: 2px;
     cursor: pointer;
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
+}
+
+.radio-button:first-child {
+    margin-left: 5px;
 }
 
 .radio-button .marker {
