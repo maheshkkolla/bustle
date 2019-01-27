@@ -14,7 +14,7 @@
 }
 
 .check-box:hover input:not(:checked) + .marker {
-    border-color: #0079BF;
+    border-color: #E4F0F6;
     background-color: #E4F0F6;
 }
 
