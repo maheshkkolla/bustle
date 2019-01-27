@@ -28,7 +28,7 @@ var htmlEntries = fs.readdirSync('src/html').map(function(e) {
     var entry = e.split('.')[0];
     return new HtmlWebpackPlugin({
         filename: "html/" + entry + ".html",
-        template: "src/html/" + entry + ".html"
+        template: "src/html/" + entry + ".pug"
     })
 });
 
@@ -43,6 +43,12 @@ var htmlConfig = Object.assign({}, config, {
         path: __dirname + '/dist'
     },
     plugins: htmlEntries,
+    module: {
+        rules: [
+            { test: /\.png$/, loader: 'file-loader' },
+            { test: /\.pug$/, loader: 'pug-loader' }
+        ]
+    }
 });
 
 // var cssEntries = {};

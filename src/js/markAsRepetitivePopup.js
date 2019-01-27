@@ -1,13 +1,18 @@
 import $ from 'jquery';
-console.log("Came here");
 
 $(document).ready(() => {
-    $("input.of").change((e) => {
-        const value = e.target.value;
-        console.log("Value", value);
-        if(value === 'Week') {
+    // $("input.of").change((e) => {
+    //     const value = e.target.value;
+    //     if(value === 'Week') {
+    //         $("#weekDays").removeClass('u-hidden');
+    //     } else {
+    //         $("#weekDays").addClass('u-hidden');
+    //     }
+    // });
+    $('input[type=radio][name=of]').change(function() {
+        if (this.value === 'week') {
             $("#weekDays").removeClass('u-hidden');
-        } else {
+        } else  {
             $("#weekDays").addClass('u-hidden');
         }
     });

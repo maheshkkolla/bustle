@@ -1,0 +1,23 @@
+include ../mixins/radioButton
+
+html
+ head
+    link(rel="stylesheet" href="https://p.trellocdn.com/power-up.min.css")
+    link(rel="stylesheet" href="../css/markAsRepetitivePopup.css")
+    script(src="https://p.trellocdn.com/power-up.min.js")
+    script(src="../js/markAsRepetitivePopup.js")
+ body
+  div#mark-repetitive-popup
+   div
+    label Repeat every
+    input(class="number" type="number" name="number" value="1")
+    +radio-button('Day')
+            //<input class="of" type="text" list="of" placeholder="Day">
+            //<datalist id="of">
+            //    <option value="Day" selected></option>
+            //    <option value="Week"></option>
+            //    <option value="Month"></option>
+            //    <option value="Year"></option>
+            //</datalist>
+    div#weekDays.u-hidden Weekdays
+

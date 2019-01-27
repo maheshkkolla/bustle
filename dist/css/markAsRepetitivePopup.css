@@ -4,5 +4,6 @@ input.number {
 }
 
 input.of {
+    width: auto;
     display: inline-block;
 }
